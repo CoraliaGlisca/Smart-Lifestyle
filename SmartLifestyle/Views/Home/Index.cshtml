@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    <div id='container'>
+        <div class='item'>
+            <div class="firstHalf ">
+                <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                    <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                        <a asp-area="" asp-controller="WorkoutPlan" asp-action="WorkoutPlanner"
+                           class="btn btn-outline-button2">Get your personalized workout plan here!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='item'>
+            <div class="secondHalf">
+                <div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+                    <div class="d-md-flex align-items-center h-md-100 p-5 justify-content-center">
+                        <a asp-area="" asp-controller="MealPlan" asp-action="MealPlanner"
+                           class="btn btn-outline-button2">Get your personalized meal plan here!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,123 @@
+﻿@model SmartLifestyle.BusinessLogic.RecipeModels.Root
+@{
+    ViewData["Title"] = "ShowRecipe";
+}
+<link rel="shortcut icon" href="https://spoonacular.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://spoonacular.com/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<a asp-route-id="@Model.IdMeal" asp-area="" asp-controller="MealPlan" asp-action="MealFavorite"
+   class="btn-outline-button3">
+    <i class="far fa-heart"></i>Save to favorite recipes
+
+</a>
+
+
+
+<div class="container" style="text-align:center;">
+    <h3>@Model.title</h3>
+    <img class="recipeImage" src="@Model.image" alt="recipeImage" />
+    <h5><i>Health Score: </i>@Model.healthScore</h5>
+    <i class="fas fa-utensil-spoon" style="color:#50723C">Spoonacular score: @Model.spoonacularScore%</i>
+</div>
+
+<p class="summary panel">@Html.Raw(Model.summary)</p>
+
+<div class="row">
+    <div class="col-md-4">
+        <ul>
+            @if (Model.diets != null)
+            {
+                <b style="color: #2B6777">Diet: </b>
+                foreach (var item in Model.diets)
+                {
+                    <li>@item</li>
+
+                }
+
+            }
+        </ul>
+    
+        @*<ul>
+            @if (Model.cuisines != null)
+            {
+               <b style="color: #2B6777">Cuisine: </b>
+                foreach (var item in Model.cuisines)
+                {
+                    <li>@item</li>
+                }
+
+             }
+        </ul>*@
+    </div>
+
+    <div class="col-md-3 offset-4">
+        @if (Model.cheap == false)
+        {
+        <i class="far fa-smile-wink" style="color: #2B6777">This one's price is great!</i>
+            <p>Price per serving: @Model.pricePerServing cents</p>
+        }
+        else
+        {
+            <i class="far fa-sad-tear">This one's price is not so great...</i>
+            <p>Price per serving: @Model.pricePerServing cents</p>
+        }
+    </div>
+</div>
+
+
+
+
+    <h3><i>Ingredient List:</i></h3>
+
+    <ol class="steps">
+        @foreach (var item in Model.extendedIngredients)
+        {
+            <li>
+                <i style="color: #50723C; margin: 1em;"><strong>@item.name</strong></i> <i style="margin: 1em"> Unit amount: @item.amount @item.unit</i>
+                <i style="margin: 1em">Metric amount: @item.measures.metric.amount @item.measures.metric.unitShort</i>
+            </li>
+        }
+    </ol>
+
+    <h3><i>Instructions:</i></h3>
+    <p class="summary panel">@Html.Raw(Model.instructions)</p>
+
+
+    <h3><i>Nutritional values:</i></h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Nutrition</th>
+                <th>Percentage %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Carbs</strong></td>
+                <td>@Model.nutrition.caloricBreakdown.percentCarbs%</td>
+            </tr>
+            <tr>
+                <td><strong>Fat</strong></td>
+                <td>@Model.nutrition.caloricBreakdown.percentFat%</td>
+            </tr>
+            <tr>
+                <td><strong>Protein</strong></td>
+                <td>@Model.nutrition.caloricBreakdown.percentProtein%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    @*@if (Model.winePairing != null)
+        {
+            @foreach (var item in Model.winePairing)
+            {
+                <p>@item.pairedWines @item.pairingText @item.productMatches</p>
+
+            }
+        }*@
+
+
+
+

@@ -1,0 +1,201 @@
+﻿@model SmartLifestyle.BusinessLogic.Models.WorkoutPlannerViewModel
+@{
+    ViewData["Title"] = "Fitness planner";
+}
+
+<div class="container" style="text-align:center; padding:10px;">
+    <h2>Workout Planner</h2>
+    <hr />
+
+    @if (User.Identity.IsAuthenticated)
+    {
+
+<form action="/WorkoutPlan/WorkoutPlanner" method='POST'>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Choose exercise type:</h3>
+            <p>
+                Cardio
+                <input type="radio" id="Cardio" name="Cardio" value=0 checked style="cursor: pointer">
+                <label for="Cardio">no</label>
+                <input type="radio" id="Cardio" name="Cardio" value=1 style="cursor: pointer">
+                <label for="Cardio"> yes</label>
+            </p>
+            <p>
+                Weight
+                <input type="radio" id="Weight" name="Weight" value=0 checked style="cursor: pointer">
+                <label for="Weight">no</label>
+                <input type="radio" id="Weight" name="Weight" value=1 style="cursor: pointer">
+                <label for="Weight"> yes</label>
+            </p>
+            <p>
+                Plyo
+                <input type="radio" id="Plyo" name="Plyo" value=0 checked style="cursor: pointer">
+                <label for="Plyo">no</label>
+                <input type="radio" id="Plyo" name="Plyo" value=1 style="cursor: pointer">
+                <label for="Plyo"> yes</label>
+            </p>
+            <p>
+                Laps
+                <input type="radio" id="Laps" name="Laps" value=0 checked style="cursor: pointer">
+                <label for="Laps">no</label>
+                <input type="radio" id="Laps" name="Laps" value=1 style="cursor: pointer">
+                <label for="Laps"> yes</label>
+            </p>
+            <p>
+                Machine
+                <input type="radio" id="Machine" name="Machine" value=0 checked style="cursor: pointer">
+                <label for="Machine">no</label>
+                <input type="radio" id="Machine" name="Machine" value=1 style="cursor: pointer">
+                <label for="Machine"> yes</label>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/pplfitness.jpg" style="width: 70%;"/>
+        </div>
+    </div>
+    <h3>Choose exercise equipment:</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                Band
+                <input type="radio" id="Band" name="Band" value=0 checked style="cursor: pointer">
+                <label for="Band">no</label>
+                <input type="radio" id="Band" name="Band" value=1 style="cursor: pointer">
+                <label for="Band"> yes</label>
+            </p>
+            <p>
+                Bar
+                <input type="radio" id="Bar" name="Bar" value=0 checked style="cursor: pointer">
+                <label for="Bar">no</label>
+                <input type="radio" id="Bar" name="Bar" value=1 style="cursor: pointer">
+                <label for="Bar"> yes</label>
+            </p>
+            <p>
+                Body Weight
+                <input type="radio" id="Body Weight" name="Body Weight" value=0 checked style="cursor: pointer">
+                <label for="Body Weight">no</label>
+                <input type="radio" id="Body Weight" name="Body Weight" value=1 style="cursor: pointer">
+                <label for="Body Weight"> yes</label>
+            </p>
+            <p>
+                Bosu Ball
+                <input type="radio" id="Bosu Balll" name="Bosu Balll" value=0 checked style="cursor: pointer">
+                <label for="Bosu Balll">no</label>
+                <input type="radio" id="Bosu Balll" name="Bosu Balll" value=1 style="cursor: pointer">
+                <label for="Bosu Balll"> yes</label>
+            </p>
+            <p>
+                Dumbbells
+                <input type="radio" id="Dumbbells" name="Dumbbells" value=0 checked style="cursor: pointer">
+                <label for="Dumbbells">no</label>
+                <input type="radio" id="Dumbbells" name="Dumbbells" value=1 style="cursor: pointer">
+                <label for="Dumbbells"> yes</label>
+            </p>
+            <p>
+                Kettlebells
+                <input type="radio" id="Kettlebells" name="Kettlebells" value=0 checked style="cursor: pointer">
+                <label for="Kettlebells">no</label>
+                <input type="radio" id="Kettlebells" name="Kettlebells" value=1 style="cursor: pointer">
+                <label for="Kettlebells"> yes</label>
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <p>
+                Landmine
+                <input type="radio" id="Landmine" name="Landmine" value=0 checked style="cursor: pointer">
+                <label for="Landmine">no</label>
+                <input type="radio" id="Landmine" name="Landmine" value=1 style="cursor: pointer">
+                <label for="Landmine"> yes</label>
+            </p>
+            <p>
+                Platform
+                <input type="radio" id="Platform" name="Platform" value=0 checked style="cursor: pointer">
+                <label for="Platform">no</label>
+                <input type="radio" id="Platform" name="Platform" value=1 style="cursor: pointer">
+                <label for="Platform"> yes</label>
+            </p>
+            <p>
+                Squat Rack
+                <input type="radio" id="Squat Rack" name="Squat Rack" value=0 checked style="cursor: pointer">
+                <label for="Squat Rack">no</label>
+                <input type="radio" id="Squat Rack" name="Squat Rack" value=1 style="cursor: pointer">
+                <label for="Squat Rack"> yes</label>
+            </p>
+            <p>
+                Cable
+                <input type="radio" id="Cable" name="Cable" value=0 checked style="cursor: pointer">
+                <label for="Cable">no</label>
+                <input type="radio" id="Cable" name="Cable" value=1 style="cursor: pointer">
+                <label for="Cable"> yes</label>
+            </p>
+            <p>
+                Medicine Ball
+                <input type="radio" id="Medicine Ball" name="Medicine Ball" value=0 checked style="cursor: pointer">
+                <label for="Medicine Ball">no</label>
+                <input type="radio" id="Medicine Ball" name="Medicine Ball" value=1 style="cursor: pointer">
+                <label for="Medicine Ball"> yes</label>
+            </p>
+        </div>
+    </div>
+
+    <h3>Choose major muscle:</h3>
+    <p>
+        Arms
+        <input type="radio" id="Arms" name="Arms" value=0 checked style="cursor: pointer">
+        <label for="Arms">no</label>
+        <input type="radio" id="Arms" name="Arms" value=1 style="cursor: pointer">
+        <label for="Arms"> yes</label>
+    </p>
+    <p>
+        Back
+        <input type="radio" id="Back" name="Back" value=0 checked style="cursor: pointer">
+        <label for="Back">no</label>
+        <input type="radio" id="Back" name="Back" value=1 style="cursor: pointer">
+        <label for="Back"> yes</label>
+    </p>
+    <p>
+        Core
+        <input type="radio" id="Core" name="Core" value=0 checked style="cursor: pointer">
+        <label for="Core">no</label>
+        <input type="radio" id="Core" name="Core" value=1 style="cursor: pointer">
+        <label for="Core"> yes</label>
+    </p>
+    <p>
+        Full Body
+        <input type="radio" id="Full Body" name="Full Body" value=0 checked style="cursor: pointer">
+        <label for="Full Body">no</label>
+        <input type="radio" id="Full Body" name="Full Body" value=1 style="cursor: pointer">
+        <label for="Full Body"> yes</label>
+    </p>
+    <p>
+        Legs
+        <input type="radio" id="Legs" name="Legs" value=0 checked style="cursor: pointer">
+        <label for="Legs">no</label>
+        <input type="radio" id="Legs" name="Legs" value=1 style="cursor: pointer">
+        <label for="Legs"> yes</label>
+    </p>
+
+    <p><button type="submit" class="btn btn-outline-button3">Submit</button></p>
+</form>
+
+     }
+
+else
+    {
+        <p>
+            You must be logged in to access this page!
+            <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+        </p>
+        <p>
+            No account?
+            <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </p>
+    }
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

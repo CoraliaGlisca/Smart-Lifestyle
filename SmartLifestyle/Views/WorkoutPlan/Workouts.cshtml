@@ -1,0 +1,111 @@
+﻿@model SmartLifestyle.BusinessLogic.Models.WholeWorkoutRoutineDTO
+@{
+    ViewData["Title"] = "Workouts Page";
+}
+
+<h3 style="text-align:center"><i>Your workout routine</i></h3>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em;">
+            <img class="card-img-top" src="@("/images/" + @Model.workout1.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout1.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout1.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout1.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout1.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout1.Notes
+                </p>
+                <a asp-route-id="@Model.workout1.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+                @*@Html.ActionLink("ReadMore", "ShowWorkout", "WorkoutPlan", new { id = @Model.id })*@
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em">
+            <img class="card-img-top" src="@("/images/" + @Model.workout2.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout2.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout2.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout2.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout2.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout2.Notes
+                </p>
+                <a asp-route-id="@Model.workout2.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em">
+            <img class="card-img-top" src="@("/images/" + @Model.workout3.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout3.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout3.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout3.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout3.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout3.Notes
+                </p>
+                <a asp-route-id="@Model.workout3.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em">
+            <img class="card-img-top" src="@("/images/" + @Model.workout4.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout4.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout4.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout4.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout4.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout4.Notes
+                </p>
+                <a asp-route-id="@Model.workout4.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em">
+            <img class="card-img-top" src="@("/images/" + @Model.workout5.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout5.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout5.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout5.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout5.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout5.Notes
+                </p>
+                <a asp-route-id="@Model.workout5.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em">
+            <img class="card-img-top" src="@("/images/" + @Model.workout6.Image)" alt="Card image cap">
+            <div class="container" style="text-align:center">
+                <h5 class="card-title">@Model.workout6.Exercise</h5>
+                <p class="card-subtitle">Equipment: @Model.workout6.Equipment</p>
+                <p class="card-text">Exercise Type: @Model.workout6.ExerciseType</p>
+                <p class="card-text">Major Mucle: @Model.workout6.MajorMuscle</p>
+                <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                    @Model.workout6.Notes
+                </p>
+                <a asp-route-id="@Model.workout6.id" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

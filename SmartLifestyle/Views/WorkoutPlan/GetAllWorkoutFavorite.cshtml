@@ -1,0 +1,30 @@
+﻿@model IList<SmartLifestyle.Models.Model.FavoriteWorkout>
+@{
+    ViewData["Title"] = "Workout history";
+}
+
+<h2>Your saved workouts</h2>
+<hr />
+
+<div class="row">
+    @foreach(var item in Model) 
+    { 
+        <div class="col-md-6">
+            <div class="card2" style=" width: 80%; margin: 15px auto 15px; padding: 16px; height:99%; background-color: #C8D8EA; border-radius: 25px; margin:1.5em;">
+                <img class="card-img-top" src="@("/images/" + @item.Workout.Image)" alt="Card image cap">
+                <div class="container" style="text-align:center">
+                    <h5 class="card-title">@item.Workout.Exercise</h5>
+                    <p class="card-subtitle">Equipment: @item.Workout.Equipment</p>
+                    <p class="card-text">Type: @item.Workout.ExerciseType</p>
+                    <p class="card-text">Major Mucle: @item.Workout.MajorMuscle</p>
+                    <p class="card-text" style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;
+                               max-width: 400px;">
+                        @item.Workout.Notes
+                    </p>
+                    <a asp-route-id="@item.WorkoutId" asp-controller="WorkoutPlan" asp-action="ShowWorkout"
+                   class="btn btn-outline-button3">Read More</a>               
+                </div>
+             </div>
+        </div>
+    }
+</div>

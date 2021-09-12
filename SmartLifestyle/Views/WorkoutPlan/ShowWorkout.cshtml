@@ -1,0 +1,28 @@
+﻿@model SmartLifestyle.BusinessLogic.Models.WholeWorkoutRoutineDTO
+@{
+    ViewData["Title"] = "ShowWorkout";
+}
+
+<a asp-route-id="@Model.id" asp-area="" asp-controller="WorkoutPlan" asp-action="WorkoutFavorite"
+   class="btn-outline-button4">
+    <i class="far fa-heart"></i>Save to favorite workouts
+</a>
+
+<div class="container" style="text-align:center;">
+    <h2><b>@Model.workout1.Exercise</b></h2>
+    <img class="recipeImage" style="border: 6px solid #C8D8EA" src="@("/images/" + @Model.workout1.Image)" alt="recipeImage" />
+</div>
+
+<div style="text-align:right"><b style="color: #2B6777">Type: <i class="fas fa-running"></i></b>@Model.workout1.ExerciseType</div>
+<div style="text-align:right"><b style="color: #2B6777">Equipment: <i class="fas fa-dumbbell"></i></b>@Model.workout1.Equipment</div>
+
+<div style="text-align:right">
+    <p><b style="color: #2B6777">Major muscles: </b>@Model.workout1.MajorMuscle</p>
+    <p><b style="color: #2B6777">Minor muscles: </b>@Model.workout1.MinorMuscle</p>
+</div>
+
+<h4><b>How to do @Model.workout1.Exercise:</b></h4>
+<p class="summary panel" style="background: #C8D8EA"><i>@Model.workout1.Notes</i></p>
+
+<h4><b>Modification of @Model.workout1.Exercise:</b></h4>
+<p class="summary panel" style="background: #C8D8EA"><i>@Model.workout1.Modifications</i></p>

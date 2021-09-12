@@ -1,0 +1,9 @@
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\bin\Debug\netcoreapp3.1\SmartLifestyle.Models.deps.json
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\bin\Debug\netcoreapp3.1\SmartLifestyle.Models.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\bin\Debug\netcoreapp3.1\SmartLifestyle.Models.pdb
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.AssemblyInfo.cs
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.csproj.CoreCompileInputs.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.Models\obj\Debug\netcoreapp3.1\SmartLifestyle.Models.pdb

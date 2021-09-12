@@ -1,0 +1,76 @@
+﻿@model SmartLifestyle.BusinessLogic.Models.MealPlannerViewModel
+@{
+    ViewData["Title"] = "Meal planner";
+}
+
+<div class="container" style="text-align:center; padding:10px;">
+    <h2>Meal Planner</h2>
+    <hr sstyle="border-top: 2px solid; color: #69B578;"/>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form method="post" action="/MealPlan/MealPlanner">
+            <h3>Do you have any allergies?</h3>
+            <div class="row">
+                @foreach (var item in Model.Allergens)
+                {
+
+                    <div class="checkbox" id="ck-button">
+                        <label>
+                            <input type="checkbox"
+                                   name="SelectedAllergens"
+                                   value="@item.Value" /><span>@item.Text</span>
+                            </label>
+                        </div>
+                 }
+            </div>
+
+            <h3>Do you follow any of the diets from below?</h3>
+            <div class="row">
+                @foreach (var item in Model.Diets)
+                {
+
+                    <div class="checkbox" id="ck-button">
+                        <label>
+                            <input type="checkbox"
+                                   name="SelectedDiets"
+                                   value="@item.Value" /><span>@item.Text</span>
+                            </label>
+                        </div>
+                    }
+            </div>
+
+            <h3>Is the any ingredient that you do not want in your meals?</h3>
+            <div class="row">
+                <div class="form-group" style="margin-left: 475px;">                   
+                    <input asp-for="ExcludedIngredients" placeholder="e.g. olives, clamps" style=" border-radius: 25px; border-color: #2B677"/>
+                </div>
+            </div>
+            <h3>Enter your target calories:</h3>
+            <div class="row">
+                <div class="form-group" style="margin-left: 475px;">
+                    <input asp-for="TargetCalories" placeholder="e.g. 2100" style=" border-radius: 25px; border-color: #2B677"/>
+                    <span asp-validation-for="TargetCalories" class="text-danger"></span>
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-outline-button3">Submit</button>
+        </form>
+
+    }
+    else
+    {
+        <p>
+            You must be logged in to access this page!
+            <a asp-area="Identity" asp-page="/Account/Login">Login</a>
+        </p>
+        <p>
+            No account?
+            <a asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </p>
+    }
+</div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }

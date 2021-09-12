@@ -1,0 +1,17 @@
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.deps.json
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.pdb
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.Models.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.Repository.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.Models.pdb
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.Repository.pdb
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.csprojAssemblyReference.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.AssemblyInfo.cs
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.csproj.CopyComplete
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.dll
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.pdb
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.runtimeconfig.json
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\bin\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.runtimeconfig.dev.json
+C:\Users\Cora\source\repos\SmartLifestyle\SmartLifestyle.BusinessLogic\obj\Debug\netcoreapp3.1\SmartLifestyle.BusinessLogic.genruntimeconfig.cache

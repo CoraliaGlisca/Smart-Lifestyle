@@ -1,0 +1,101 @@
+Id,Cardio,Weight,Plyo,Laps,Machine,Band,Bar,Body Weight,Bosu Balll,Dumbbells,Kettlebells,Landmine,Platform,Squat Rack,Cable,Medicine Ball,Arms,Back,Core,Full Body,Legs,Exercise1,Exercise2,Exercise3,Exercise4,Exercise5,Exercise6
+1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,Plank Jack,Monkey Jump,Military Plank,Seal Jacks,High Knees,Literally Just Jumping 
+2,0,1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,1,0,0,1,0,Single Arm Clean and Press,Chest Press,Plank,Tricep Kick-Back,Kettlebell Swing,Pushup
+3,1,0,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,0,1,1,1,Twisted Mountain Climbers,Step Up Lunges,Plank Jack,Wall Ball,Box Toe Touch,Lateral Band Walk
+4,1,1,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,1,0,1,1,Donkey Kick,Glute Bridge,Fire Hydrant,Side Lunge,Superman,Plank Jack
+5,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,1,1,0,0,0,1,Broad Jump,Jump Lunges,Tricep Dip,Single Leg Squat,Pushup,Squat Jump
+6,1,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,Bounds,Broad Jump,Burpee Broad Jump,Crab Crawl,Lateral Band Walk,Skipping
+7,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,Spiderman Pushup,Deadbug,Tricep Dip,Side Plank Dips,Pushup,Lying Leg Raises
+8,0,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,Burpee,Burpee Broad Jump,Military Plank,Squat Jumps 180,Knee Drive,Frogger
+9,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,1,1,0,1,1,Single Leg Hip Bridge,Burpee,Bulgarian Split Squat,Row,Shoulder Press,Skull Crusher
+10,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,Jumping Jack Push Press,Situp and Throw,Russian Twist,Single Arm Clean and Press  ,Plank,Side Plank
+11,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,Bicep Curl,Arnold Press,Skull Crusher,Shoulder Press,Chest Press,Tricep Kick-Back
+12,1,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,Broad Jump,Bounds,Burpee Broad Jump,Crab Crawl,Jump Lunges,Skipping
+13,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,Bounds,Broad Jump,Burpee Broad Jump,Crab Crawl,Single Leg Squat,Skipping
+14,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,Box Toe Touch,Broad Jump,Butt Kickers,Jump Lunges,Skaters,Squat Jump
+15,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,Bounds,Broad Jump,Burpee Broad Jump,Crab Crawl,Lateral Band Walk,Skipping
+16,1,0,1,0,0,1,0,0,1,0,0,0,1,1,1,1,0,0,1,1,1,Lateral Band Walk,Mountain Climbers,Burpee,Box Toe Touch,Wall Ball,Lateral Band Walk
+17,1,0,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,1,1,1,Jump Lunges,Monkey Jump,Squat Jump,Plank Jack,Butt Kickers,Frogger
+18,1,0,1,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,1,1,Broad Jump,Jumping Jack Push Press,Skipping,Butt Kickers,Jump Lunges,Military Plank
+19,1,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,Pushup,Pushup Walk,Spiderman Pushup,Tricep Dip,Plank Jack,Bicycle Crunch
+20,1,0,1,0,0,1,0,1,1,1,0,0,0,0,0,0,1,0,1,0,0,Mountain Climbers,Plank Jack,Twisted Mountain Climbers,Weighted Punches,Military Plank,Knee Drive
+21,1,0,0,0,0,0,1,1,0,0,1,0,1,1,1,0,1,0,1,1,0,Plank Jack,High Knees,Jumping Jacks,Seal Jacks,Crab Crawl,Jump Rope
+22,0,1,0,0,0,0,1,1,1,0,1,0,1,0,1,0,0,0,1,0,0,Bicycle Crunch,Flutter Kick,Reverse Crunches,Side Plank Dips,Deadbug,Leg Raise
+23,0,1,0,0,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,Leg Pull Apart,Plank Row,Row,Superman,Sumo Squat,Glute Bridge
+24,1,0,0,1,0,0,0,1,1,0,0,1,1,0,1,0,0,0,0,1,0,Mountain Climbers,Skipping,Crab Crawl,Bounds,Jumping Jacks,Jump Rope
+25,0,1,0,0,0,1,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,Halo,Heart Pump,Pushup Walk,Russian Twist,Side Plank with Leg Lift,Situp and Throw
+26,0,1,1,0,0,0,0,0,1,1,0,0,0,1,0,1,0,1,1,0,0,Plank Row,Situp and Throw,Standing Oblique Crunch,Straightup Situp,Burpee,Jumping Jack Push Press
+27,1,1,0,1,0,1,0,0,1,0,1,0,0,0,0,0,0,1,1,1,1,Leg Pull Apart,Mountain Climbers,Plank Jack,Side Plank with Leg Lift,Twisted Mountain Climbers,Fire Hydrant
+28,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,1,Bounds,Broad Jump,Butt Kickers,Jump Lunges,Skaters,Squat Jump
+29,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,Burpee Broad Jump,Frogger,Literally Just Jumping,Touchdown,Knee Drive,Squat Jumps 180
+30,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,Jump Lunges,Military Plank,Broad Jump,Skaters,Squat Jump,Butt Kickers
+31,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,Bounds,Weighted Punches,Broad Jump,Butt Kickers,Skaters,Squat Jump
+32,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,1,Arnold Press,Close to Wide Grip Burnout,Bulgarian Split Squat,Curtsey Lunges,Shoulder Press,Skull Crusher
+33,0,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1,0,0,1,Plank Row,Superman,Jump Lunges,Plank Row,Side Lunge,Single Leg Squat
+34,1,0,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,Box Toe Touch,Kettlebell Swing,Mountain Climbers,Twisted Mountain Climbers,Weighted Jumping Jacks,Weighted Punches
+35,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,0,0,1,1,Burpee,Jumping Jack Push Press,Lateral Band Walk,Box Jumps,Burpee Broad Jump,Tuck Jump
+36,1,0,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,1,0,Plank Jack,Monkey Jump,Knee Drive,Touchdown,Frogger,High Knees
+37,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,Butt Kickers,Compass Jump,High Knees,Jump Rope,Jumping Jacks,Seal Jacks
+38,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Bicycle Crunch,Flutter Kick,Leg Raise,Reverse Crunches,Side Plank Dips,Deadbug
+39,0,1,0,0,0,1,1,1,0,1,0,0,0,0,0,0,0,1,0,0,0,Leg Pull Apart,Plank Row,Row,Superman,Fire Hydrant,Donkey Kick
+40,1,0,0,0,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,1,1,Box Toe Touch,Kettlebell Swing,Lateral Band Walk,Plank Jack,Weighted Jumping Jacks,Weighted Punches
+41,1,1,0,1,0,0,0,1,1,1,0,0,0,0,0,1,0,0,1,1,0,Mountain Climbers,Situp and Throw,Straightup Situp,Twisted Mountain Climbers,Wall Ball,Weighted Punches
+42,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,Bicycle Crunch,Flutter Kick,Leg Raise,Lying Leg Raises,Reverse Crunches,Side Plank Dips
+43,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,Box Jumps,Frogger,Knee Drive,Literally Just Jumping,Squat Jumps 180,Touchdown
+44,1,0,1,1,0,0,0,0,0,1,1,0,1,0,0,1,0,0,1,1,1,Jumping Jack Push Press,Kettlebell Swing,Step Up Lunges,Wall Ball,Weighted Jumping Jacks,Weighted Punches
+45,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,Arnold Press,Chest Press,Close to Wide Grip Burnout,Shoulder Press,Side Arm / Lateral Raise,Skull Crusher
+46,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,Compass Jump,Crab Crawl,High Knees,Jump Rope,Jumping Jacks,Skipping
+47,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,1,Goblet Squat,Halo,Heart Pump,Russian Twist,Single Arm Clean and Press  ,Arnold Press
+48,1,0,0,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,1,1,Box Toe Touch,Mountain Climbers,Plank Jack,Twisted Mountain Climbers,Weighted Jumping Jacks,Weighted Punches
+49,1,0,1,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,Broad Jump,Bounds,Butt Kickers,Lateral Band Walk,Squat Jump,Skaters
+50,0,1,1,0,0,0,0,1,0,1,1,0,0,0,0,0,0,1,1,0,0,Russian Twist,Superman,Deadbug,Side Plank Dips,Reverse Crunches,Bicycle Crunch
+51,1,0,1,1,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,Bounds,Broad Jump,Butt Kickers,Jump Lunges,Skaters,Squat Jump
+52,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,Donkey Kick,Glute Bridge,Squat,Squat to Lateral Leg Lift,Standing Glute Kickbaks,Fire Hydrant
+53,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,Halo,Heart Pump,Single Arm Clean and Press  ,Side Arm / Lateral Raise,Tricep Kick-Back,Tricep Overhead Press
+54,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,Fire Hydrant,Leg Pull Apart,Pushup Walk,Side Plank with Leg Lift,Squat to Lateral Leg Lift,Standing Glute Kickbaks
+55,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,Burpee Broad Jump,Frogger,Literally Just Jumping,Knee Drive,Skipping,Touchdown
+56,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,Situp and Throw,Bicycle Crunch,Lying Leg Raises,Spiderman Pushup,Deadbug,Reverse Crunches
+57,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,Arnold Press,Chest Press,Close to Wide Grip Burnout,Side Arm / Lateral Raise,Tricep Kick-Back,Tricep Overhead Press
+58,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,Lateral Band Walk,Leg Pull Apart,Pushup Walk,Squat to Lateral Leg Lift,Standing Glute Kickbaks,Standing Leg Lift
+59,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,1,Box Toe Touch,Deficit Squat,Glute Bridge March,Jumping Jack Push Press,Situp and Throw,Wall Ball
+60,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,Compass Jump,High Knees,Jump Rope,Jumping Jacks,Seal Jacks,Wall Ball
+61,1,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,Box Jumps,Burpee Broad Jump,Crab Crawl,Knee Drive,Weighted Jumping Jacks,Skipping
+62,1,1,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,Glute Bridge,Lateral Band Walk,Leg Pull Apart,Squat to Lateral Leg Lift,Standing Glute Kickbaks,Standing Leg Lift
+63,1,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,1,1,Box Toe Touch,Butt Kickers,Jump Lunges,Mountain Climbers,Skaters,Squat Jump
+64,1,0,1,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,1,1,Squat Jump,Broad Jump,Kettlebell Swing,Weighted Punches,Skipping,Bounds
+65,0,1,1,1,0,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,1,Bulgarian Split Squat,Curtsey Lunges,Plank Row,Row,Standing Oblique Crunch,Straightup Situp
+66,1,0,0,0,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,Kettlebell Swing,Weighted Jumping Jacks,Seal Jacks,High Knees,Jump Rope,Compass Jump
+67,0,0,1,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,1,1,Burpee,Burpee Broad Jump,Step Up Lunges,Touchdown,Tuck Jump,Military Plank
+68,1,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,1,0,1,Butt Kickers,Jump Lunges,Military Plank,Skaters,Squat Jump,Weighted Punches
+69,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,Crab Crawl,High Knees,Skipping,Wall Ball,Jump Rope,Burpee Broad Jump
+70,0,1,1,0,0,0,1,0,0,1,0,1,0,0,1,0,1,1,0,0,1,Bicep Curl,Bulgarian Split Squat,Curtsey Lunges,Row,Shoulder Press,Skull Crusher
+71,1,0,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,Box Toe Touch,Burpee,Kettlebell Swing,Mountain Climbers,Step Up Lunges,Twisted Mountain Climbers
+72,0,1,1,1,0,1,1,0,0,1,0,1,0,0,0,0,0,1,0,0,1,Leg Pull Apart,Plank Row,Row,Bulgarian Split Squat,Curtsey Lunges,Glute Bridge
+73,1,1,0,1,0,1,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,Arnold Press,Chest Press,Close to Wide Grip Burnout,Pushup Walk,Side Arm / Lateral Raise,Tricep Kick-Back
+74,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,1,1,0,Burpee,Jumping Jack Push Press,Mountain Climbers,Twisted Mountain Climbers,Wall Ball,Skipping
+75,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,1,Goblet Squat,Halo,Heart Pump,Kettlebell Swing,Russian Twist,Single Arm Clean and Press  
+76,1,1,1,0,0,0,1,0,0,1,1,0,0,0,1,0,1,0,0,1,0,Heart Pump,Jumping Jack Push Press,Single Arm Clean and Press  ,Skull Crusher,Wall Ball,Kettlebell Swing
+77,1,1,0,1,0,1,1,1,0,1,0,0,0,1,0,0,0,0,0,0,1,Squat,Step-Back Lunge,Fire Hydrant,Donkey Kick,Bounds,Sumo Squat
+78,1,1,1,0,0,1,0,1,1,0,0,0,1,1,1,0,0,0,0,0,1,Squat,Squat to Lateral Leg Lift,Donkey Kick,Standing Leg Lift,Step-Back Lunge,Step Up Lunges
+79,0,1,1,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,Donkey Kick,Fire Hydrant,Glute Bridge,Side Lunge,Squat to Lateral Leg Lift,Single Leg Squat
+80,1,0,0,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,1,0,High Knees,Crab Crawl,Jumping Jacks,Kettlebell Swing,Skipping,Weighted Jumping Jacks
+81,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,1,0,0,0,0,Arnold Press,Bicep Curl,Close to Wide Grip Burnout,Shoulder Press,Skull Crusher,Side Arm / Lateral Raise
+82,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,0,0,Arnold Press,Chest Press,Close to Wide Grip Burnout,Pushup,Spiderman Pushup,Tricep Dip
+83,1,0,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,Broad Jump,Butt Kickers,Jump Lunges,Skaters,Squat Jump,High Knees
+84,1,1,0,1,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,Box Toe Touch,Butt Kickers,Deficit Squat,Single Leg Squat,Skaters,Broad Jump
+85,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,1,1,Goblet Squat,Halo,Heart Pump,Kettlebell Swing,Russian Twist,Single Arm Clean and Press  
+86,1,0,1,1,0,1,0,0,0,1,1,0,1,0,0,0,0,0,1,1,1,Kettlebell Swing,Lateral Band Walk,Plank Jack,Step Up Lunges,Weighted Jumping Jacks,Weighted Punches
+87,0,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,1,1,Burpee,Deficit Squat,Burpee Broad Jump,Single Leg Squat,Literally Just Jumping,Knee Drive
+88,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,Lateral Band Walk,Pushup Walk,Situp and Throw ,Squat to Lateral Leg Lift,Standing Glute Kickbaks,Standing Leg Lift
+89,1,0,1,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,0,Burpee,Burpee Broad Jump,Crab Crawl,Frogger,Seal Jacks,Monkey Jump
+90,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,0,Bicycle Crunch,Compass Jump,Situp and Throw ,Wall Ball,Plank,Seal Jacks
+91,0,1,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,Close to Wide Grip Burnout,Shoulder Press,Side Arm / Lateral Raise,Skull Crusher,Tricep Kick-Back,Tricep Overhead Press
+92,1,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,Military Plank,Lateral Band Walk,Broad Jump,Squat Jump,Skaters,Butt Kickers
+93,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,0,Bicycle Crunch,Flutter Kick,Leg Raise,Lying Leg Raises,Standing Oblique Crunch,Straightup Situp
+94,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,1,0,Box Jumps,Burpee,Frogger,Jumping Jack Push Press,Knee Drive,Touchdown
+95,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,Bulgarian Split Squat,Curtsey Lunges,Jumping Jack Push Press,Situp and Throw ,Standing Oblique Crunch,Straightup Situp
+96,0,1,0,1,0,0,1,1,0,1,0,0,0,0,0,0,1,0,0,0,1,Bulgarian Split Squat,Curtsey Lunges,Shoulder Press,Skull Crusher,Side Lunge,Single Leg Squat
+97,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,1,1,0,0,1,1,Bicep Curl,Jumping Jack Push Press,Step Up Lunges,Literally Just Jumping,Military Plank,Knee Drive
+98,1,0,0,0,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,Butt Kickers,Jump Lunges,Plank Jack,Skaters,Squat Jump,Weighted Punches
+99,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,Broad Jump,Jumping Jack Push Press,Knee Drive,Squat Jumps 180,Touchdown,Tuck Jump
+100,1,0,1,0,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,1,Butt Kickers,Jump Lunges,Military Plank,Plank Jack,Skaters,Squat Jump

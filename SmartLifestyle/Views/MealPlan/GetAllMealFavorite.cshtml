@@ -1,0 +1,27 @@
+﻿@model IList<SmartLifestyle.Models.Model.FavoriteMeal>
+@{
+    ViewData["Title"] = "Meal history";
+}
+
+<h2>Your saved meals </h2>
+<hr />
+
+<div class="row" style="display:flex">
+    @foreach (var item in Model)
+    {
+
+    <div class="column2" style="margin: 15px 0 15px;">
+
+        <div class="card2" recipeId="@item.Meal.IdAPI" style="background-color: #C8D8EA;">
+            <p class="card-title">@item.Meal.Title</p>
+            <p class="card-subtitle">Servings: @item.Meal.Servings</p>
+            <p>Ready in: @item.Meal.ReadyInMinutes minutes</p>
+            <a asp-route-id="@item.Meal.IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe" class="btn btn-outline-button4">
+                Go to recipe
+            </a>
+        </div>
+        
+    </div>
+
+    }
+</div>

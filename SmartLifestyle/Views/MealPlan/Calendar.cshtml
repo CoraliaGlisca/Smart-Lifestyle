@@ -1,0 +1,368 @@
+﻿@model SmartLifestyle.Models.Model.Week
+@{
+    ViewData["Title"] = "Meal plan";
+}
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+<div class="row" style="align-items:center">
+    <button value="-1" name="offset" class="col-md-2; btn btn-outline-button3" style="margin-left:65px"><i class="cursor: pointer; fas fa-chevron-left">
+    @Html.ActionLink("Last week", "Calendar", "MealPlan", new { offset = -1 })
+</i></button>
+    <div class="col-md-8"><h2 style="margin-left:200px">Your Meal Plan</h2></div>
+    <button value="1" name="offset" class="col-md-1; btn btn-outline-button3"><i class="cursor: pointer; fas fa-chevron-right">
+    @Html.ActionLink("Next week", "Calendar", "MealPlan", new { offset = 1 })
+</i></button>
+</div>
+
+<hr />
+<a asp-area="" asp-controller="MealPlan" asp-action="MealPlanner"
+   class="btn-outline-button3">Want to change your meal plan?</a>
+<hr />
+
+<div class="row" style="margin: 0 -5px;">
+    <p id="rotate-text">Monday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Monday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Monday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Monday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Monday.Meal[0].SourceUrl" alt="Card image cap">
+                    @*@Html.ActionLink("ShowRecipe", "ShowRecipe", "MealPlan", new { id = "@Model.Monday.Meal[0].IdAPI" })*@
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Monday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Monday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Monday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Monday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Monday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Monday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Monday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Monday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary:</p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Monday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Monday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Monday.Nutrients.Protein</p>
+                <p>Fat: @Model.Monday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+
+    <p id="rotate-text">Tuesday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Tuesday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Tuesday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Tuesday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Tuesday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Tuesday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Tuesday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Tuesday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Tuesday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Tuesday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Tuesday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Tuesday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Tuesday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary: </p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Tuesday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Tuesday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Tuesday.Nutrients.Protein</p>
+                <p>Fat: @Model.Tuesday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+    <p id="rotate-text">Wednesday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Wednesday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Wednesday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Wednesday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Wednesday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Wednesday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Wednesday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Wednesday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Wednesday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Wednesday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Wednesday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Wednesday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Wednesday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary:</p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Wednesday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Wednesday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Wednesday.Nutrients.Protein</p>
+                <p>Fat: @Model.Wednesday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+    <p id="rotate-text">Thursday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Thursday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Thursday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Thursday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Thursday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Thursday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Thursday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Thursday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Thursday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Thursday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Thursday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Thursday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Thursday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary: </p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Thursday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Thursday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Thursday.Nutrients.Protein</p>
+                <p>Fat: @Model.Thursday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+    <p id="rotate-text">Friday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Friday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Friday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Friday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Friday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Friday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Friday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Friday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Friday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Friday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Friday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Friday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Friday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary: </p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Friday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Friday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Friday.Nutrients.Protein</p>
+                <p>Fat: @Model.Friday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+    <p id="rotate-text">Saturday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Saturday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Saturday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Saturday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Saturday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Saturday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Saturday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Saturday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Saturday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Saturday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Saturday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Saturday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Saturday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary: <i class="fas fa-utensils"></i></p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Saturday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Saturday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Saturday.Nutrients.Protein</p>
+                <p>Fat: @Model.Saturday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+    <p id="rotate-text">Sunday</p>
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Morning <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Sunday.Meal[0].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Sunday.Meal[0].Title</p>
+                <a asp-route-id="@Model.Sunday.Meal[0].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Sunday.Meal[0].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Noon <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Sunday.Meal[1].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Sunday.Meal[1].Title</p>
+                <a asp-route-id="@Model.Sunday.Meal[1].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Sunday.Meal[1].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Evening <i class="fas fa-utensils"></i></p>
+            <div class="card2" recipeId="@Model.Sunday.Meal[2].IdAPI" style="background-color: #f2f2f2;">
+                <p class="card-title">@Model.Sunday.Meal[2].Title</p>
+                <a asp-route-id="@Model.Sunday.Meal[2].IdAPI" asp-controller="MealPlan" asp-action="ShowRecipe">
+                    <img class="card-img-top" src="@Model.Sunday.Meal[2].SourceUrl" alt="Card image cap">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="card2" style="background-color: #2B6777;">
+            <p card="card-subtitle" style="color:white">Summary: </p>
+            <div class="card2" style="background-color: #f2f2f2;">
+                <p>Calories: @Model.Sunday.Nutrients.Calories</p>
+                <p>Carbohydrates: @Model.Sunday.Nutrients.Carbohydrates</p>
+                <p>Protein: @Model.Sunday.Nutrients.Protein</p>
+                <p>Fat: @Model.Sunday.Nutrients.Fat</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
